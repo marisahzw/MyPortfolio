@@ -369,71 +369,51 @@ h3 {
 
 
 /* ----- ABOUT INFO ----- */
-.parent {
-    height: 100vh;
-    padding: 0 clamp(4rem, 12vw, 20rem);
-    display: grid;
-    place-content: center;
-    overflow: hidden;
-    border: 0 ;
+/* ABOUT SECTION */
 
-    h1{
-        color: white;
-    }
+.text-container p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #efefef;
 
-    p {
-        font-size: clamp(2rem, 5vw, 8rem);
-    }
+  }
+#about {
+    position: relative;
+  }
 
-    &:nth-of-type(1) {
-        border-bottom: 1px solid black;
-        background-color: yellow;
-    }
-    &:nth-of-type(2) {
-        background: #08f3f3;
-    }
+  .certification{
+    font-size: 15px;
+    font-weight: 300;
+    color: #efefef;
+  }
 
+  
+  
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .about-containers,
+  .about-details-container {
+    display: flex;
+  }
+  
+ 
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+  
 
-    &:nth-of-type(3) {
-        background: #ffff00;
-    }
-
-    &:nth-of-type(4) {
-        background:  rgb(106, 90, 205);
-        color: black;
-    }
-    &:nth-of-type(5) {
-        background: rgb(255, 211, 0, 1);
-        color: black;
-    }
-    &:nth-of-type(6) {
-        background: rgb(106, 90, 205);
-        color: white;
-    }
-    &:nth-of-type(7) {
-        background: #ffff00;
-        color: black;
-    }
-    &:nth-of-type(8) {
-        background: black ;
-        color: ghostwhite;
-    }
-}
-
-.about-info p {
-
-    margin-bottom: 0; /* Reset margin bottom */
-}
-
-.about-btn button {
-    background: var(--first-color);
-    color: var(--color-white);
-    border-radius: 30px;
-}
-
-.about-btn button:hover {
-    background: var(--first-color-hover);
-}
 
 /* ----- ABOUT / SKILLS BOX ----- */
 /* ----- EXPERIENCE SECTION ----- */
