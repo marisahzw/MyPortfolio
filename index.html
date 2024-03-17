@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- --------- UNICONS ---------- -->
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+      
+      <!---GREENSOCK ANIMATION-  ---->
+      <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+      <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <!-- Anime.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <!-- RevealFx -->
+      <script src="https://cdn.jsdelivr.net/npm/revealfx@0.0.2/src/revealFx.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+      <!-- Letterize -->
+      <script src="https://cdn.jsdelivr.net/npm/letterizejs@2.0.1/lib/letterize.min.js"></script>
+      <!-- --------- CSS ---------- -->
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+      <!-- --------- FAVICON ---------- -->
+      <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+      <title>Portfolio | Marisa</title>
+   </head>
+   <body>
+      <div class="container">
+         <!-- --------------- HEADER --------------- -->
+         <nav id="header">
+            <div class="nav-logo">
+               <p class="nav-name">Marisa</p>
+               <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+               <ul class="nav_menu_list">
+                  <li class="nav_list">
+                     <a href="#home" class="nav-link active-link">Home</a>
+                     <div class="circle"></div>
+                  </li>
+                  <li class="nav_list">
+                     <a href="#about" class="nav-link">About</a>
+                     <div class="circle"></div>
+                  </li>
+                  <li class="nav_list">
+                     <a href="#projects" class="nav-link">Projects</a>
+                     <div class="circle"></div>
+                  </li>
+                  <li class="nav_list">
+                     <a href="#contact" class="nav-link">Contact</a>
+                     <div class="circle"></div>
+                  </li>
+               </ul>
+            </div>
+            <div class="nav-button">
+               <a href="./assets/Tafadzwa Marisa_Master Resume.pdf" download>
+                   <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+               </a>
+           </div>
+           
+            <div class="nav-menu-btn">
+               <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+         </nav>
+         <!-- ---------------- MAIN ---------------- -->
+         <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+               <div class="featured-text">
+                  <div class="featured-text-card">
+                     <span>Tafadzwa Marisa</span>
+                  </div>
+                  <div class="featured-name">
+                     <p>I'm a <span class="typedText"></span> Developer</p>
+                  </div>
+                  <div class="featured-text-info">
+                     <p>Passionate Front & Backend Developer crafting immaculate visual experiences.</p>
+                  </div>
+                  <div class="featured-text-btn">
+                     <button class="btn blue-btn">Hire Me</button>
+                     <a href="./assets/Tafadzwa Marisa_Master Resume.pdf" download>
+                         <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                     </a>
+                 </div>
+                 
+                  <div class="social_icons">
+                     <div class="icon">
+                        <a href="https://www.instagram.com/marisahzw/" target="_blank"><i class="uil uil-instagram"></i></a>
+                     </div>
+                     <div class="icon">
+                        <a href="https://www.linkedin.com/in/tafadzwamarisa/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                     </div>
+                     <div class="icon">
+                        <a href="https://twitter.com/MarisaH_00" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+                     </div>
+                     <div class="icon">
+                        <a href="https://github.com/marisahzw" target="_blank"><i class="uil uil-github-alt"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="featured-image">
+                  <div class="image">
+                     <img src="assets/images/avatar.jpg" alt="avatar" />
+                  </div>
+               </div>
+               <div class="scroll-icon-box">
+                  <a href="#about" class="scroll-btn">
+                     <i class="uil uil-mouse-alt"></i>
+                     <p>Scroll Down</p>
+                  </a>
+               </div>
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+               <div class="top-header">
+                  <div class="flexy flexy--center">
+                     <div class="flexy__items flexy__items--cyan">
+                        <h2 class="content__title content__title--center">
+                           <div id="rfx1" class="content__title__inner">I'm a Frontend & Backend Developer with experience in a wide array of technologies, including HTML,CSS, JavaScript, MERN stack, Python, C#</div>
+                           <br />
+                        </h2>
+                     </div>
+                  </div>
+               </div>
+               <!-- -------------- EACH GSAP LINE ---------------- -->
+               <div class="about-info">
+                  <h1 id="intro">
+                     <div class="parent">
+                        <section class="line">
+                           <p class="reveal-type" data-bg-color="#353535" data-fg-color="teal"> Excelling in both front and
+                              backend web development with attention to detail
+                           </p>
+                        </section>
+                     </div>
+                     <div class="parent">
+                        <section class="line">
+                           <p class="reveal-type" data-bg-color="#353535" data-fg-color="white">
+                              Effective in dynamic environments, managing diverse responsibilities
+                           </p>
+                        </section>
+                     </div>
+                     <div class="parent">
+                        <section class="line">
+                           <p class="reveal-type" data-bg-color="#353535" data-fg-color="yellow">Committed to creating
+                              stable and captivating software products.
+                           </p>
+                        </section>
+                     </div>
+                  </h1>
+               </div>
+               <div class="col">
+                  <div class="about-info">
+                     <!--GSAP INTRO TEXT -->
+                  
+                    
+                  </div>
+               </div>
+            </section>
+            <!-- -------------- EXPERIENCE BOX ---------------- -->
+            <section class="section" id="experience">
+               <div class="top-header">
+                  <h1 class="front">EXPERIENCE</h1>
+                  <div class="experience-details-container">
+                     <div class="about-containers">
+                        <div class="details-container">
+                           <h2 class="experience-sub-title">Frontend Development</h2>
+                           <div class="article-container">
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>REACT</h3>
+                                    <p>Intermediate</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>EXPRESS</h3>
+                                    <p>Basic</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>ANGULAR</h3>
+                                    <p>Intermediate</p>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                        <div class="details-container">
+                           <h2 class="experience-sub-title">Backend Development</h2>
+                           <div class="article-container">
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>NODE JS</h3>
+                                    <p>Experienced</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>PYTHON</h3>
+                                    <p>Basic</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>JAVA</h3>
+                                    <p>Intermediate</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                        <div class="details-container">
+                           <h2 class="experience-sub-title">Database</h2>
+                           <div class="article-container">
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>PostgreSQL</h3>
+                                    <p>Basic</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>MongoDB</h3>
+                                    <p>Experienced</p>
+                                 </div>
+                              </article>
+                              <article>
+                                 <img
+                                    src="./assets/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                    />
+                                 <div>
+                                    <h3>MySQL</h3>
+                                    <p>Intermediate</p>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+               <div class="top-header">
+                  <h1  class="front">Projects</h1>
+               </div>
+               <div class="experience-details-container">
+                <div class="about-containers">
+                  <div class="details-container color-container">
+                    <div class="article-container">
+                      <img
+                        src="./assets/project-1.png"
+                        alt="Project 1"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experience-sub-title project-title">WEATHER APP</h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/marisahzw/weather-app'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://marisaweatherapp.netlify.app'"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                  <div class="details-container color-container">
+                    <div class="article-container">
+                      <img
+                        src="./assets/TODOLISTWEBAPP.png"
+                        alt="Project 2"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experience-sub-title project-title">TODO LIST</h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/marisahzw/To-Do-List'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://marisatodolistwebapp.netlify.app/'"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                  <div class="details-container color-container">
+                    <div class="article-container">
+                      <img
+                        src="./assets/quizapp.png"
+                        alt="Project 3"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experience-sub-title project-title">SIMPLE QUIZ APP</h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/marisahzw/Quiz-App'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://marisasimplequizapp.netlify.app'"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="details-container color-container">
+                    <div class="article-container">
+                      <img
+                        src="./assets/project-3.png"
+                        alt="Project 3"
+                        class="project-img"
+                      />
+                    </div>
+                    <h2 class="experience-sub-title project-title">SneakerXplore   INPRODUCTION</h2>
+                    <div class="btn-container">
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/marisahzw/SneakerXplore'"
+                      >
+                        Github
+                      </button>
+                      <button
+                        class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://youtu.be/1VnaE0Tbmfw'"
+                      >
+                        Live Demo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </section>
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <section class="section" id="contact">
+              
+               <div class="top-header">
+                  <h1>Get in touch</h1>
+                  <span>Do you have a project in your mind, contact me here</span>
+               </div>
+               <h1 class="front">Contact Me</h1>
+               <div class="contact-info-upper-container">
+                 <div class="contact-info-container">
+                   <img
+                     src="./assets/email.png"
+                     alt="Email icon"
+                     class="icon contact-icon email-icon"
+                   />
+                   <p><a href="mailto:Tafadzwamarisa00@gmail.com">Tafadzwamarisa00@gmail.com</a></p>
+                 </div>
+                 <div class="contact-info-container">
+                   <img
+                     src="./assets/linkedin.png"
+                     alt="LinkedIn icon"
+                     class="icon contact-icon"
+                   />
+                   <p><a href="https://www.linkedin.com/in/tafadzwamarisa/">LinkedIn</a></p>
+                 </div>
+               </div>
+              </div> 
+            </section>
+         </main>
+         <!-- --------------- FOOTER --------------- -->
+         <footer>
+            <div class="top-footer">
+               <p class="front">Tafadzwa Marisa .</p>
+            </div>
+            <div class="middle-footer">
+               <ul class="footer-menu">
+                  <li class="footer_menu_list">
+                     <a href="#home">Home</a>
+                  </li>
+                  <li class="footer_menu_list">
+                     <a href="#about">About</a>
+                  </li>
+                  <li class="footer_menu_list">
+                     <a href="#projects">Projects</a>
+                  </li>
+                  <li class="footer_menu_list">
+                     <a href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer-social-icons">
+               <div class="icon">
+                  <a href="https://www.instagram.com/marisahzw/" target="_blank"><i class="uil uil-instagram"></i></a>
+               </div>
+               <div class="icon">
+                  <a href="https://www.linkedin.com/in/tafadzwamarisa/" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+               </div>
+               <div class="icon">
+                  <a href="https://twitter.com/MarisaH_00" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+               </div>
+               <div class="icon">
+                  <a href="https://github.com/marisahzw" target="_blank"><i class="uil uil-github-alt"></i></a>
+               </div>
+            </div>
+            <div class="bottom-footer">
+               <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Tafadzwa Marisa</a> - All rights reserved</p>
+            </div>
+         </footer>
+      </div>
+      </div>
+      <!-- ----- TYPING JS Link ----- -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- ----- SCROLL REVEAL JS Link----- -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- ----- MAIN JS ----- -->
+      <script src="assets/js/main.js"></script>
+      <!-- ----- GSAP JS ----- -->
+      <script src="assets/js/gsap.js"></script>
+   </body>
+</html>
